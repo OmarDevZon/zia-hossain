@@ -1,0 +1,39 @@
+.slider-container {
+  position: relative;
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 500;
+      background: #000;
+      opacity: 0.6;
+  }
+
+  .slider-content {
+      font-weight: 600;
+      font-size: x-large;
+      position: absolute;
+      top: 50%;
+      padding: 0 100px;
+      transform: translateY(-50%);
+      z-index: 999;
+  }
+
+  .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+  }
+
+  .prev {
+      left: 20px;
+  }
+
+  .next {
+      right: 20px;
+  }
+}
